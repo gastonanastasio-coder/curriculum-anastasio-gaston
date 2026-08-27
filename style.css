@@ -2,6 +2,23 @@
 /* CSS document */
 
 h1 {
-    font-size: 100px;
-    color: red;
+    font-size: 40
+    px;
+    color: rgb(95, 247, 57);
+}
+
+p {
+    width: 500px;
+    font-weight: 100;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: rgb(1, 2, 37);
+    color: white;
+}
+
+h1, h2{
+    font-style: italic;
+    font-weight: bold;
 }
