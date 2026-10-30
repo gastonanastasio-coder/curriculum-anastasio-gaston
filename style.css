@@ -515,6 +515,10 @@ main {
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
+.red_contacto > p {
+    margin: 0;
+}
+
 .red_contacto:hover {
     color: #c8f808;
     transform: scale(1.05);
