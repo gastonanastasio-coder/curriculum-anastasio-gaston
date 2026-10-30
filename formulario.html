@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anastasio Gastón — Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header class="cabecera">
+
+        <nav class="navegacion" aria-label="Navegación principal">
+            <a class="logo" href="index.html">GA</a>
+            <a href="sobre_mi.html">Sobre mí</a>
+            <a href="branding.html">Branding</a>
+            <a href="editorial.html">Diseño editorial</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+
+        <div class="linea_superior" aria-hidden="true"></div>
+
+    </header>
+
+
+
+
+    <main class="pagina_formulario">
+
+        <section class="contenido_formulario">
+
+
+            <img
+                class="fondo_puntos"
+                src="Portfolio compu III/fondo.png"
+                alt="" width="1920" height="1080">
+
+
+
+            <div class="marco_formulario">
+
+                <span class="esquina_formulario esquina_superior_izquierda" aria-hidden="true"></span>
+                <span class="esquina_formulario esquina_superior_derecha" aria-hidden="true"></span>
+                <span class="esquina_formulario esquina_inferior_izquierda" aria-hidden="true"></span>
+                <span class="esquina_formulario esquina_inferior_derecha" aria-hidden="true"></span>
+
+                <form class="formulario" action="#" method="post">
+
+                    <h1 class="titulo_oculto">Formulario de contacto</h1>
+
+
+                    <div class="fila_formulario">
+
+                        <div class="campo_formulario">
+                            <label for="nombre">Nombre</label>
+                            <input
+                                type="text"
+                                id="nombre"
+                                name="nombre"
+                                placeholder="Tu nombre"
+                                autocomplete="name"
+                                required>
+                        </div>
+
+                        <div class="campo_formulario">
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="tu@email.com"
+                                autocomplete="email"
+                                required>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="campo_formulario">
+                        <label for="empresa">Empresa (opcional)</label>
+                        <input
+                            type="text"
+                            id="empresa"
+                            name="empresa"
+                            placeholder="Nombre de tu empresa"
+                            autocomplete="organization">
+                    </div>
+
+
+
+                    <div class="campo_formulario">
+                        <label for="servicio">¿En qué puedo ayudarte?</label>
+                        <select id="servicio" name="servicio" required>
+                            <option value="" selected disabled>Seleccioná un servicio</option>
+                            <option value="branding">Branding</option>
+                            <option value="redes">Diseño para redes sociales</option>
+                            <option value="editorial">Diseño editorial</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+
+
+                    <div class="campo_formulario">
+                        <label for="proyecto">Contame sobre tu proyecto</label>
+                        <textarea
+                            id="proyecto"
+                            name="proyecto"
+                            rows="4"
+                            placeholder="Escribí los detalles, objetivos, plazos, etc."
+                            required></textarea>
+                    </div>
+
+
+
+                    <button class="boton_enviar" type="submit">
+                        <span>Enviar mensaje</span>
+                        <span class="flecha_enviar" aria-hidden="true">→</span>
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer class="pie">
+
+        <p>Anastasio Gastón</p>
+
+        <div class="linea_inferior" aria-hidden="true"></div>
+
+        <p>2026</p>
+
+    </footer>
+
+</body>
+
+</html>
