@@ -5,8 +5,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
 
-
-
 * {
     box-sizing: border-box;
 }
@@ -40,22 +38,18 @@ a:focus-visible {
     outline-offset: 8px;
 }
 
-
-
 .cabecera {
-    position: sticky;
-    top: 0;
+
+
     width: 100%;
     height: 123px;
     flex-shrink: 0;
     background: #000;
-    z-index: 100;
+
 }
 
 .navegacion {
-    position: absolute;
-    top: 53px;
-    left: 136px;
+
     display: flex;
     align-items: center;
     gap: 49px;
@@ -83,49 +77,34 @@ a:focus-visible {
 }
 
 .linea_superior {
-    position: absolute;
-    top: 118px;
-    left: 136px;
+
     width: calc(100% - 272px);
     height: 2px;
     background: #fff;
 }
 
-
-
 main {
-    position: relative;
+
     flex: 1 0 auto;
     width: 100%;
 }
 
-
-
 .portada {
-    position: relative;
+
     width: 100%;
-    aspect-ratio: 16 / 9;
-    overflow: hidden;
+
+    height: calc(56.25vw - 236px);
+    overflow: visible;
     background: #000;
-
-    /* Mantiene las posiciones originales
-       aunque el header esté fuera del main */
-
-    margin-top: -123px;
 }
 
 .lienzo {
-    position: absolute;
-    inset: 0;
+
     overflow: hidden;
 }
 
-
-
 .titulo {
-    position: absolute;
-    top: 145px;
-    left: 200px;
+
     margin: 0;
     color: #686868;
     opacity: 0.26;
@@ -147,21 +126,13 @@ main {
     font-size: 29rem;
 }
 
-
-
 .personaje {
-    position: absolute;
-    top: 145px;
-    left: 461px;
+
     object-fit: cover;
 }
 
-
-
 .ver_trabajos {
-    position: absolute;
-    top: 196px;
-    left: 1457px;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,34 +152,26 @@ main {
     transform: scale(1.05);
 }
 
-
-
 .cursor {
-    position: absolute;
-    top: 257px;
-    left: 1758px;
+
     width: 40px;
     height: 58px;
     background: #c8f808;
 
-    clip-path: polygon(
-        0 0,
-        94% 59%,
-        52% 59%,
-        74% 88%,
-        48% 97%,
-        27% 67%,
-        0 82%
-    );
+    clip-path: polygon(0 0,
+            94% 59%,
+            52% 59%,
+            74% 88%,
+            48% 97%,
+            27% 67%,
+            0 82%);
 
     pointer-events: none;
 }
 
-
-
 .pie {
-    position: relative;
-    margin: 0 136px 30px 136px;
+
+    margin: 0 auto 30px;
     display: flex;
     align-items: center;
     gap: 28px;
@@ -219,10 +182,10 @@ main {
     font-style: italic;
     font-weight: 500;
     white-space: nowrap;
-    z-index: 10;
+
 }
 
-.pie > p {
+.pie>p {
     margin: 0;
 }
 
@@ -232,27 +195,18 @@ main {
     background: #fff;
 }
 
-
-
-/* Mantiene el footer superpuesto a la portada,
-   como en el diseño original de Figma. */
-
-.portada + .pie {
-    margin-top: -113px;
+.portada+.pie {
+    margin-top: 0;
 }
 
-
-
 .pagina_sobre_mi {
-    position: relative;
+
     width: 100%;
     background: #000;
 }
 
-
-
 .inicio_sobre_mi {
-    position: relative;
+
     width: 100%;
     height: 973px;
     background: #000;
@@ -261,35 +215,21 @@ main {
     justify-content: center;
 }
 
-
-
-.marco_sobre_mi {
-    position: absolute;
-    
-    object-fit: contain;
-}
-
-
-
 .titulo_sobre_mi {
-    position: relative;
+
     margin: 0;
     color: #686868;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 11.934rem;
+    font-size: 11.9rem;
     font-weight: 400;
     line-height: 158.78px;
     white-space: nowrap;
-    z-index: 2;
+
 }
-
-
 
 .verde_sobre_mi {
     color: #c8f808;
 }
-
-
 
 .imagen_titulo_sobre_mi {
     display: block;
@@ -298,21 +238,14 @@ main {
     object-fit: contain;
 }
 
-
-
 .contenido_sobre_mi {
-    position: relative;
+
     width: 100%;
     min-height: 973px;
     background: #000;
 }
 
-
-
 .bloque_sobre_mi {
-    position: absolute;
-    top: 142px;
-    left: 120px;
 
     width: 828px;
     min-height: 354px;
@@ -330,7 +263,7 @@ main {
 
     color: #fff;
     font-family: "Inter", sans-serif;
-    font-size: 2.168rem;
+    font-size: 2.1rem;
     font-weight: 800;
 }
 
@@ -339,17 +272,12 @@ main {
 
     color: #fff;
     font-family: "Inter", sans-serif;
-    font-size: 1.223rem;
+    font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.45;
 }
 
-
-
 .bloque_enfoque {
-    position: absolute;
-    top: 549px;
-    left: 120px;
 
     width: 828px;
     min-height: 318px;
@@ -367,7 +295,7 @@ main {
 
     color: #c8f808;
     font-family: "Inter", sans-serif;
-    font-size: 2.168rem;
+    font-size: 2.1rem;
     font-weight: 800;
 }
 
@@ -376,24 +304,19 @@ main {
 
     color: #fff;
     font-family: "Inter", sans-serif;
-    font-size: 1.223rem;
+    font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.45;
 }
 
-
-
 .imagen_disenador {
-    position: absolute;
-    top: 11px;
-    left: 1021px;
 
     width: 764px;
     height: 836px;
 }
 
 .imagen_disenador img {
-       display: block;
+    display: block;
     width: 112%;
     height: 108%;
     object-fit: contain;
@@ -409,28 +332,25 @@ main {
     overflow: hidden;
 }
 
-
-
 .pagina_contacto {
-    position: relative;
+    display: flex;
+
+
+
     width: 100%;
     background: #000;
 }
 
 .contenido_contacto {
-    position: relative;
+
     width: 100%;
     height: 957px;
     background: #000;
     overflow: hidden;
 }
 
-
-
 .retrato_contacto {
-    position: absolute;
-    top: 12px;
-    left: 194px;
+
     width: 880px;
     margin: 0;
 }
@@ -441,18 +361,12 @@ main {
     height: auto;
 }
 
-
-
 .presentacion_contacto {
-    position: absolute;
-    top: 110px;
-    left: 1053px;
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-
-
 
 .titulo_contacto {
     margin: 0;
@@ -471,8 +385,6 @@ main {
 .titulo_verde {
     color: #c8f808;
 }
-
-
 
 .boton_contactame {
     display: flex;
@@ -495,8 +407,6 @@ main {
     transform: scale(1.05);
 }
 
-
-
 .redes_contacto {
     display: flex;
     align-items: center;
@@ -515,7 +425,7 @@ main {
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.red_contacto > p {
+.red_contacto>p {
     margin: 0;
 }
 
@@ -531,26 +441,18 @@ main {
     object-fit: contain;
 }
 
-
-
-.pagina_contacto + .pie {
-    margin-top: -100px;
+.pagina_contacto+.pie {
+    margin-top: 0;
 }
 
-
-
-
-
 .pagina_branding {
-    position: relative;
+
     width: 100%;
     background: #000;
 }
 
-
-
 .inicio_branding {
-    position: relative;
+
     width: 100%;
     height: 973px;
     background: #000 url("Portfolio compu III/fondo.png") center / cover no-repeat;
@@ -560,31 +462,24 @@ main {
     overflow: hidden;
 }
 
-.marco_branding {
-    position: absolute;
-    object-fit: contain;
-}
-
 .titulo_branding {
-    position: relative;
+
     margin: 0;
     color: #686868;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 11.934rem;
+    font-size: 11.9rem;
     font-weight: 400;
     line-height: 158.78px;
     white-space: nowrap;
-    z-index: 2;
+
 }
 
 .verde_branding {
     color: #c8f808;
 }
 
-
-
 .proyecto_gomex {
-    position: relative;
+
     width: 100%;
     height: 1040px;
     background: #fff;
@@ -607,87 +502,62 @@ main {
     line-height: 1.35;
 }
 
-
-
 .logo_gomex {
-    position: absolute;
-    top: 58px;
-    left: 122px;
+
     display: block;
     border-radius: 34px;
 }
 
-
-
 .texto_gomex {
-    position: absolute;
-    top: 410px;
-    left: 122px;
+
     width: 640px;
 }
 
-.texto_gomex p + h2 {
+.texto_gomex p+h2 {
     margin-top: 58px;
 }
 
 .texto_diseno_integral {
-    position: absolute;
-    top: 64px;
-    left: 846px;
+
     width: 440px;
 }
 
-.texto_diseno_integral h2 {
-    font-size: 1.5rem;
-}
-
-.texto_diseno_integral p {
-    font-size: 1rem;
-}
-
-
-
 .foto_creatina,
-.ig_publicaciones,
-.ig_perfil {
-    position: absolute;
-    display: block;
+.ig_publicaciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     border-radius: 28px;
-    object-fit: cover;
+    flex-shrink: 0;
 }
 
-.foto_creatina {
-    top: 311px;
-    left: 846px;
-    object-position: 50% 62%;
+.foto_creatina img,
+.ig_publicaciones img {
+    display: block;
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
 }
 
 .ig_publicaciones {
-    top: 678px;
-    left: 846px;
-    object-position: 50% 100%;
+    align-items: flex-end;
 }
-
-
-
 .ig_perfil {
-    top: 44px;
-    left: 1341px;
+    display: block;
+    border-radius: 28px;
+    object-fit: cover;
     background: #020a12;
 }
 
 .oso_gomex {
-    position: absolute;
-    top: 318px;
-    left: 1340px;
+
     display: block;
     height: auto;
 }
 
-
-
 .proyecto_mg3d {
-    position: relative;
+
     width: 100%;
     height: 960px;
     background: #000;
@@ -696,9 +566,7 @@ main {
 }
 
 .texto_mg3d {
-    position: absolute;
-    top: 100px;
-    left: 122px;
+
     width: 890px;
 }
 
@@ -719,7 +587,7 @@ main {
 
 .tarjeta_mg3d_banner,
 .tarjeta_mg3d_libros {
-    position: absolute;
+
     margin: 0;
     overflow: hidden;
     border-radius: 34px;
@@ -727,15 +595,15 @@ main {
 }
 
 .tarjeta_mg3d_banner {
-    top: 457px;
-    left: 128px;
+
+
     width: 963px;
     height: 439px;
 }
 
 .tarjeta_mg3d_libros {
-    top: 90px;
-    left: 1114px;
+
+
     width: 684px;
     height: 806px;
 }
@@ -755,42 +623,27 @@ main {
     object-fit: contain;
 }
 
-
-
-.fondo_puntos {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none;
-}
-
 .cuerpo_editorial {
     background: #fff;
 }
 
-.pagina_editorial + .pie {
+.pagina_editorial+.pie {
     background: transparent;
     color: #000;
 }
 
-.pagina_editorial + .pie .linea_inferior {
+.pagina_editorial+.pie .linea_inferior {
     background: currentColor;
 }
 
 .pagina_editorial {
-    position: relative;
+
     width: 100%;
     background: #000;
 }
 
-
-
-
 .inicio_editorial {
-    position: relative;
+
     width: 100%;
     height: 973px;
     background: #000;
@@ -800,31 +653,24 @@ main {
     overflow: hidden;
 }
 
-.marco_editorial {
-    position: absolute;
-    object-fit: contain;
-}
-
 .titulo_editorial {
-    position: relative;
+
     margin: 0;
     color: #686868;
     font-family: "Bebas Neue", sans-serif;
-    font-size: 11.934rem;
+    font-size: 11.9rem;
     font-weight: 400;
     line-height: 158.78px;
     white-space: nowrap;
-    z-index: 2;
+
 }
 
 .verde_editorial {
     color: #c8f808;
 }
 
-
-
 .trabajos_editorial {
-    position: relative;
+
     width: 100%;
     height: 1040px;
     background: #fff;
@@ -832,9 +678,7 @@ main {
 }
 
 .libro_formula {
-    position: absolute;
-    top: 150px;
-    left: 135px;
+
     margin: 0;
     width: 640px;
 }
@@ -847,8 +691,8 @@ main {
 
 .libro_interior,
 .video_editorial {
-    position: absolute;
-    left: 840px;
+
+
     width: 980px;
     margin: 0;
     overflow: hidden;
@@ -856,13 +700,13 @@ main {
 }
 
 .libro_interior {
-    top: 60px;
+
     height: 473px;
     background: #d3161d;
 }
 
 .video_editorial {
-    top: 557px;
+
     height: 464px;
     background: #000;
 }
@@ -874,8 +718,6 @@ main {
     height: 100%;
     object-fit: cover;
 }
-
-
 
 .enlace_editorial {
     display: block;
@@ -893,11 +735,11 @@ main {
 }
 
 .navegacion_libro {
-    position: sticky;
-    top: 123px;
+
+
     padding: 20px 32px;
     background: #fff;
-    z-index: 20;
+
 }
 
 .volver_editorial {
@@ -924,13 +766,13 @@ main {
 }
 
 .pagina_formulario {
-    position: relative;
+
     width: 100%;
     background: #000;
 }
 
 .contenido_formulario {
-    position: relative;
+
     width: 100%;
     height: 957px;
     padding-top: 73px;
@@ -940,45 +782,14 @@ main {
     overflow: hidden;
 }
 
-
-
 .marco_formulario {
-    position: relative;
+
     width: 1314px;
     height: 779px;
     padding: 59px 70px 71px 70px;
     border: 2px solid #fff;
     background: #000;
 }
-
-.esquina_formulario {
-    position: absolute;
-    width: 21px;
-    height: 21px;
-    background: #c8f808;
-}
-
-.esquina_superior_izquierda {
-    top: -12px;
-    left: -12px;
-}
-
-.esquina_superior_derecha {
-    top: -12px;
-    right: -12px;
-}
-
-.esquina_inferior_izquierda {
-    bottom: -12px;
-    left: -12px;
-}
-
-.esquina_inferior_derecha {
-    bottom: -12px;
-    right: -12px;
-}
-
-
 
 .formulario {
     display: flex;
@@ -987,10 +798,10 @@ main {
 }
 
 .titulo_oculto {
-    position: absolute;
+
     width: 1px;
     height: 1px;
-    margin: -1px;
+    margin: 0;
     padding: 0;
     overflow: hidden;
     clip-path: inset(50%);
@@ -998,8 +809,8 @@ main {
 }
 
 .fila_formulario {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+
     gap: 50px;
 }
 
@@ -1061,8 +872,6 @@ main {
     outline: none;
 }
 
-
-
 .campo_formulario select {
     appearance: none;
     padding-right: 60px;
@@ -1080,8 +889,6 @@ main {
     background: #050505;
     color: #fff;
 }
-
-
 
 .boton_enviar {
     display: flex;
@@ -1116,4 +923,432 @@ main {
 .flecha_enviar {
     font-size: 1.6rem;
     font-style: normal;
+}
+
+
+.cabecera {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 53px;
+    gap: 22px;
+}
+
+.navegacion {
+    flex-shrink: 0;
+}
+
+.linea_superior {
+    flex-shrink: 0;
+}
+
+
+.cuerpo_inicio,
+.contenido_contacto,
+.contenido_formulario {
+    background-color: #000;
+    background-image: url("Portfolio compu III/fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cuerpo_inicio {
+    background-size: 100% auto;
+    background-position: center top;
+}
+
+.inicio_sobre_mi,
+.inicio_branding,
+.inicio_editorial {
+    background-color: #000;
+    background-image: url("Portfolio compu III/marco.png"), url("Portfolio compu III/fondo.png");
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px, cover;
+    background-position: center;
+}
+
+
+.portada {
+    display: flex;
+    background: transparent;
+    height: calc(56.25vw - 236px);
+}
+
+.lienzo {
+    display: flex;
+    align-items: flex-start;
+    flex-shrink: 0;
+    width: 100%;
+    height: calc(100% + 113px);
+    padding-top: 22px;
+    overflow: hidden;
+}
+
+.lienzo::before {
+    content: "";
+    flex: 0 0 200px;
+}
+
+.titulo {
+    flex: 0 0 261px;
+    width: 261px;
+    z-index: 0;
+}
+
+.ilustracion_portada {
+    display: flex;
+    flex: 0 0 996px;
+    z-index: 1;
+}
+
+.personaje {
+    width: 1036px;
+    height: 930px;
+    flex-shrink: 0;
+}
+
+.accion_portada {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 341px;
+    padding-top: 51px;
+    z-index: 2;
+}
+
+.ver_trabajos {
+    flex-shrink: 0;
+}
+
+.cursor {
+    align-self: flex-end;
+    transform: translateY(-1px);
+}
+
+.pie {
+    isolation: isolate;
+    z-index: 10;
+}
+
+/* Sobre mí: una columna de textos y otra de ilustración. */
+.contenido_sobre_mi {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 73px;
+}
+
+.textos_sobre_mi {
+    display: flex;
+    flex-direction: column;
+    gap: 53px;
+    flex: 0 0 828px;
+    padding-top: 71px;
+    margin-top: 71px;
+}
+
+.bloque_sobre_mi,
+.bloque_enfoque {
+    flex-shrink: 0;
+}
+
+.imagen_disenador {
+    flex: 0 0 764px;
+    margin-top: 11px;
+}
+
+/* Contacto: el retrato comparte la fila con la presentación. */
+.pagina_contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido_contacto {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+    height: 857px;
+}
+
+.retrato_contacto {
+    flex: 0 0 880px;
+    margin-top: 12px;
+}
+
+.presentacion_contacto {
+    flex: 0 0 673px;
+    padding-top: 55px;
+    margin-top: 55px;
+    transform: translateX(-21px);
+}
+
+/* Branding: columnas independientes para cada grupo de contenido. */
+.proyecto_gomex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 35px;
+}
+
+.gomex_identidad {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 640px;
+    gap: 55px;
+    padding-top: 58px;
+}
+
+.logo_gomex {
+    width: 608px;
+    height: 297px;
+    flex-shrink: 0;
+}
+
+.gomex_contenido {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 460px;
+    margin-left: 49px;
+    padding-top: 64px;
+}
+
+.texto_diseno_integral {
+    height: 247px;
+    flex-shrink: 0;
+}
+
+.foto_creatina {
+    width: 460px;
+    height: 323px;
+    flex-shrink: 0;
+}
+
+.ig_publicaciones {
+    width: 460px;
+    height: 326px;
+    margin-top: 44px;
+}
+
+.gomex_mascota {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 457px;
+    padding-top: 44px;
+}
+
+.ig_perfil {
+    width: 457px;
+    height: 339px;
+    flex-shrink: 0;
+}
+
+.oso_gomex {
+    width: 560px;
+    height: 698px;
+    flex-shrink: 0;
+    transform: translate(-1px, -65px);
+}
+
+.proyecto_mg3d {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 23px;
+}
+
+.mg3d_contenido {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 963px;
+    padding-top: 100px;
+}
+
+.texto_mg3d {
+    min-height: 357px;
+    flex-shrink: 0;
+    transform: translateX(-6px);
+}
+
+.tarjeta_mg3d_banner {
+    flex-shrink: 0;
+}
+
+.tarjeta_mg3d_libros {
+    flex: 0 0 684px;
+    margin-top: 90px;
+}
+
+/* Editorial: tapa a la izquierda, interior y video a la derecha. */
+.trabajos_editorial {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 65px;
+}
+
+.libro_formula {
+    flex: 0 0 640px;
+    padding-top: 75px;
+    margin-top: 75px;
+}
+
+.editorial_multimedia {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 60px;
+    flex: 0 0 980px;
+}
+
+.libro_interior,
+.video_editorial {
+    flex-shrink: 0;
+}
+
+/* Formulario: campos distribuidos con Flexbox. */
+.contenido_formulario {
+    align-items: flex-start;
+}
+
+.fila_formulario {
+    display: flex;
+}
+
+.fila_formulario>.campo_formulario {
+    flex: 1;
+    min-width: 0;
+}
+
+.marco_formulario {
+    background-image: linear-gradient(#c8f808, #c8f808), linear-gradient(#c8f808, #c8f808), linear-gradient(#c8f808, #c8f808), linear-gradient(#c8f808, #c8f808);
+    background-size: 21px 21px;
+    background-repeat: no-repeat;
+    background-position: left top, right top, left bottom, right bottom;
+}
+
+.titulo_oculto {
+    width: 0;
+    height: 0;
+    min-height: 0;
+    flex: 0 0 0;
+    font-size: 0;
+    line-height: 0;
+}
+
+.formulario {
+    row-gap: 0;
+}
+
+.formulario> :not(.titulo_oculto)+ :not(.titulo_oculto) {
+    margin-top: 30px;
+}
+
+/* Espacios laterales equivalentes a las coordenadas del diseño original. */
+.contenido_sobre_mi,
+.contenido_contacto,
+.proyecto_gomex,
+.proyecto_mg3d,
+.trabajos_editorial {
+    justify-content: flex-start;
+}
+
+.contenido_sobre_mi::before {
+    content: "";
+    flex: 0 0 47px;
+}
+
+.contenido_contacto::before {
+    content: "";
+    flex: 0 0 194px;
+}
+
+.proyecto_gomex::before {
+    content: "";
+    flex: 0 0 87px;
+}
+
+.proyecto_mg3d::before {
+    content: "";
+    flex: 0 0 105px;
+}
+
+.trabajos_editorial::before {
+    content: "";
+    flex: 0 0 70px;
+}
+
+.retrato_contacto {
+    flex-basis: 859px;
+}
+
+.imagen_contacto {
+    width: 880px;
+}
+
+.presentacion_contacto {
+    transform: none;
+}
+
+/* Los cuatro puntos del marco también se distribuyen con Flexbox. */
+.marco_formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border: 0;
+    background: transparent;
+}
+
+.marco_formulario>.formulario {
+    flex: 0 0 779px;
+    padding: 59px 70px 71px;
+    border: 2px solid #fff;
+    background: #000;
+}
+
+.esquinas_formulario {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 0;
+    height: 0;
+    width: calc(100% + 24px);
+    transform: translate(-12px, -12px);
+}
+
+.esquinas_formulario::before,
+.esquinas_formulario::after {
+    content: "";
+    flex: 0 0 21px;
+    height: 21px;
+    background: #c8f808;
+}
+
+
+@media screen and (max-width: 500px) {
+    .cabecera {
+        height: auto;
+        padding: 10px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navegacion {
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navegacion a {
+        font-size: 12px;
+    }
+
+    .navegacion .logo {
+        margin-right: 0;
+    }
+
+    .linea_superior {
+        width: 100%;
+    }
 }
