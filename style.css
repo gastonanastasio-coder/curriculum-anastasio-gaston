@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
-@import url("https://fonts.googleapis.com/css2?family=BBH+Hegarty&family=Bebas+Neue&family=Inter:ital,wght@1,500;1,700;1,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,wght@1,500;1,700;1,900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
 
@@ -10,7 +9,7 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 html,
@@ -40,10 +39,8 @@ a:focus-visible {
 
 .cabecera {
 
-
     width: 100%;
     height: 123px;
-    flex-shrink: 0;
     background: #000;
 
 }
@@ -93,42 +90,6 @@ main {
 
     width: 100%;
 
-    height: calc(56.25vw - 236px);
-    overflow: visible;
-    background: #000;
-}
-
-.lienzo {
-
-    overflow: hidden;
-}
-
-.titulo {
-
-    margin: 0;
-    color: #686868;
-    opacity: 0.26;
-    font-family: "BBH Hegarty", sans-serif;
-    font-weight: 400;
-    line-height: 385px;
-    letter-spacing: -9px;
-}
-
-.titulo span {
-    display: block;
-}
-
-.port {
-    font-size: 30rem;
-}
-
-.folio {
-    font-size: 29rem;
-}
-
-.personaje {
-
-    object-fit: cover;
 }
 
 .ver_trabajos {
@@ -153,19 +114,8 @@ main {
 }
 
 .cursor {
-
-    width: 40px;
-    height: 58px;
-    background: #c8f808;
-
-    clip-path: polygon(0 0,
-            94% 59%,
-            52% 59%,
-            74% 88%,
-            48% 97%,
-            27% 67%,
-            0 82%);
-
+    display: block;
+    object-fit: contain;
     pointer-events: none;
 }
 
@@ -177,7 +127,6 @@ main {
     gap: 28px;
     width: calc(100% - 272px);
     min-height: 43px;
-    flex-shrink: 0;
     font-size: 2rem;
     font-style: italic;
     font-weight: 500;
@@ -208,7 +157,7 @@ main {
 .inicio_sobre_mi {
 
     width: 100%;
-    height: 973px;
+    height: 90vh;
     background: #000;
     display: flex;
     align-items: center;
@@ -222,7 +171,7 @@ main {
     font-family: "Bebas Neue", sans-serif;
     font-size: 11.9rem;
     font-weight: 400;
-    line-height: 158.78px;
+    line-height: 1;
     white-space: nowrap;
 
 }
@@ -231,17 +180,10 @@ main {
     color: #c8f808;
 }
 
-.imagen_titulo_sobre_mi {
-    display: block;
-    width: 900px;
-    height: 485px;
-    object-fit: contain;
-}
-
 .contenido_sobre_mi {
 
     width: 100%;
-    min-height: 973px;
+    min-height: 90vh;
     background: #000;
 }
 
@@ -312,19 +254,12 @@ main {
 .imagen_disenador {
 
     width: 764px;
-    height: 836px;
+    height: auto;
 }
 
 .imagen_disenador img {
     display: block;
-    width: 112%;
-    height: 108%;
     object-fit: contain;
-}
-
-
-.pagina_sobre_mi {
-    overflow: visible;
 }
 
 .inicio_sobre_mi,
@@ -333,9 +268,6 @@ main {
 }
 
 .pagina_contacto {
-    display: flex;
-
-
 
     width: 100%;
     background: #000;
@@ -344,7 +276,6 @@ main {
 .contenido_contacto {
 
     width: 100%;
-    height: 957px;
     background: #000;
     overflow: hidden;
 }
@@ -357,8 +288,6 @@ main {
 
 .imagen_contacto {
     display: block;
-    width: 100%;
-    height: auto;
 }
 
 .presentacion_contacto {
@@ -374,7 +303,7 @@ main {
     font-family: "Bebas Neue", sans-serif;
     font-size: 12.5rem;
     font-weight: 400;
-    line-height: 166px;
+    line-height: 1;
     white-space: nowrap;
 }
 
@@ -437,7 +366,6 @@ main {
 .icono_behance,
 .icono_instagram {
     display: block;
-    flex-shrink: 0;
     object-fit: contain;
 }
 
@@ -454,7 +382,7 @@ main {
 .inicio_branding {
 
     width: 100%;
-    height: 973px;
+    height: 90vh;
     background: #000 url("Portfolio compu III/fondo.png") center / cover no-repeat;
     display: flex;
     align-items: center;
@@ -469,7 +397,7 @@ main {
     font-family: "Bebas Neue", sans-serif;
     font-size: 11.9rem;
     font-weight: 400;
-    line-height: 158.78px;
+    line-height: 1;
     white-space: nowrap;
 
 }
@@ -481,7 +409,7 @@ main {
 .proyecto_gomex {
 
     width: 100%;
-    height: 1040px;
+    min-height: 1040px;
     background: #fff;
     color: #000;
     overflow: hidden;
@@ -529,20 +457,17 @@ main {
     align-items: center;
     overflow: hidden;
     border-radius: 28px;
-    flex-shrink: 0;
 }
 
 .foto_creatina img,
 .ig_publicaciones img {
     display: block;
-    width: 100%;
-    height: auto;
-    flex-shrink: 0;
 }
 
 .ig_publicaciones {
     align-items: flex-end;
 }
+
 .ig_perfil {
     display: block;
     border-radius: 28px;
@@ -553,13 +478,12 @@ main {
 .oso_gomex {
 
     display: block;
-    height: auto;
 }
 
 .proyecto_mg3d {
 
     width: 100%;
-    height: 960px;
+    min-height: 960px;
     background: #000;
     color: #fff;
     overflow: hidden;
@@ -596,23 +520,24 @@ main {
 
 .tarjeta_mg3d_banner {
 
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 963px;
-    height: 439px;
+    height: auto;
+    aspect-ratio: 963 / 439;
 }
 
 .tarjeta_mg3d_libros {
 
-
     width: 684px;
-    height: 806px;
+    height: auto;
+    aspect-ratio: 684 / 806;
 }
 
 .tarjeta_mg3d_banner img,
 .tarjeta_mg3d_libros img {
     display: block;
-    width: 100%;
-    height: 100%;
 }
 
 .tarjeta_mg3d_banner img {
@@ -645,7 +570,7 @@ main {
 .inicio_editorial {
 
     width: 100%;
-    height: 973px;
+    height: 90vh;
     background: #000;
     display: flex;
     align-items: center;
@@ -660,7 +585,7 @@ main {
     font-family: "Bebas Neue", sans-serif;
     font-size: 11.9rem;
     font-weight: 400;
-    line-height: 158.78px;
+    line-height: 1;
     white-space: nowrap;
 
 }
@@ -672,7 +597,7 @@ main {
 .trabajos_editorial {
 
     width: 100%;
-    height: 1040px;
+    min-height: 1040px;
     background: #fff;
     overflow: hidden;
 }
@@ -692,7 +617,6 @@ main {
 .libro_interior,
 .video_editorial {
 
-
     width: 980px;
     margin: 0;
     overflow: hidden;
@@ -701,22 +625,28 @@ main {
 
 .libro_interior {
 
-    height: 473px;
+    height: auto;
+    aspect-ratio: 980 / 473;
     background: #d3161d;
 }
 
 .video_editorial {
 
-    height: 464px;
+    height: auto;
+    aspect-ratio: 980 / 464;
     background: #000;
 }
 
 .libro_interior img,
 .video_editorial video {
     display: block;
+    object-fit: cover;
+}
+
+.libro_interior img,
+.video_editorial video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
 .enlace_editorial {
@@ -736,7 +666,6 @@ main {
 
 .navegacion_libro {
 
-
     padding: 20px 32px;
     background: #fff;
 
@@ -752,7 +681,6 @@ main {
 
 .volver_editorial img {
     display: block;
-    flex-shrink: 0;
 }
 
 .lienzo_libro {
@@ -774,8 +702,8 @@ main {
 .contenido_formulario {
 
     width: 100%;
-    height: 957px;
-    padding-top: 73px;
+    min-height: 957px;
+    padding: 73px 24px 40px;
     display: flex;
     justify-content: center;
     background: #000;
@@ -785,10 +713,7 @@ main {
 .marco_formulario {
 
     width: 1314px;
-    height: 779px;
-    padding: 59px 70px 71px 70px;
-    border: 2px solid #fff;
-    background: #000;
+    height: auto;
 }
 
 .formulario {
@@ -799,8 +724,6 @@ main {
 
 .titulo_oculto {
 
-    width: 1px;
-    height: 1px;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -809,7 +732,6 @@ main {
 }
 
 .fila_formulario {
-    display: flex;
 
     gap: 50px;
 }
@@ -873,12 +795,8 @@ main {
 }
 
 .campo_formulario select {
-    appearance: none;
-    padding-right: 60px;
+    padding-right: 22px;
     color: #8a8a8a;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%23ffffff' stroke-width='2'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 26px center;
 }
 
 .campo_formulario select:valid {
@@ -925,7 +843,6 @@ main {
     font-style: normal;
 }
 
-
 .cabecera {
     display: flex;
     flex-direction: column;
@@ -934,16 +851,6 @@ main {
     gap: 22px;
 }
 
-.navegacion {
-    flex-shrink: 0;
-}
-
-.linea_superior {
-    flex-shrink: 0;
-}
-
-
-.cuerpo_inicio,
 .contenido_contacto,
 .contenido_formulario {
     background-color: #000;
@@ -954,8 +861,7 @@ main {
 }
 
 .cuerpo_inicio {
-    background-size: 100% auto;
-    background-position: center top;
+    background: #000 url("Portfolio compu III/fondo_portada.png") center top / 100% auto no-repeat;
 }
 
 .inicio_sobre_mi,
@@ -964,60 +870,32 @@ main {
     background-color: #000;
     background-image: url("Portfolio compu III/marco.png"), url("Portfolio compu III/fondo.png");
     background-repeat: no-repeat;
-    background-size: 1920px 1080px, cover;
+    background-size: contain, cover;
     background-position: center;
 }
-
 
 .portada {
     display: flex;
     background: transparent;
-    height: calc(56.25vw - 236px);
+    min-height: max(300px, calc(56.25vw - 236px));
 }
 
 .lienzo {
     display: flex;
     align-items: flex-start;
-    flex-shrink: 0;
     width: 100%;
-    height: calc(100% + 113px);
+    min-height: 100%;
     padding-top: 22px;
     overflow: hidden;
-}
-
-.lienzo::before {
-    content: "";
-    flex: 0 0 200px;
-}
-
-.titulo {
-    flex: 0 0 261px;
-    width: 261px;
-    z-index: 0;
-}
-
-.ilustracion_portada {
-    display: flex;
-    flex: 0 0 996px;
-    z-index: 1;
-}
-
-.personaje {
-    width: 1036px;
-    height: 930px;
-    flex-shrink: 0;
 }
 
 .accion_portada {
     display: flex;
     flex-direction: column;
-    flex: 0 0 341px;
+    flex: 0 1 341px;
     padding-top: 51px;
-    z-index: 2;
-}
-
-.ver_trabajos {
-    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: 120px;
 }
 
 .cursor {
@@ -1025,15 +903,11 @@ main {
     transform: translateY(-1px);
 }
 
-.pie {
-    isolation: isolate;
-    z-index: 10;
-}
-
-/* Sobre mí: una columna de textos y otra de ilustración. */
 .contenido_sobre_mi {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    padding: 0 80px 40px;
     align-items: flex-start;
     gap: 73px;
 }
@@ -1042,22 +916,20 @@ main {
     display: flex;
     flex-direction: column;
     gap: 53px;
-    flex: 0 0 828px;
+    flex: 1 1 400px;
+    max-width: 828px;
+    min-width: 0;
     padding-top: 71px;
     margin-top: 71px;
 }
 
-.bloque_sobre_mi,
-.bloque_enfoque {
-    flex-shrink: 0;
-}
-
 .imagen_disenador {
-    flex: 0 0 764px;
+    flex: 1 1 400px;
+    max-width: 764px;
+    min-width: 0;
     margin-top: 11px;
 }
 
-/* Contacto: el retrato comparte la fila con la presentación. */
 .pagina_contacto {
     display: flex;
     flex-direction: column;
@@ -1065,28 +937,34 @@ main {
 
 .contenido_contacto {
     display: flex;
-    align-items: flex-start;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 0;
-    height: 857px;
+    padding: 0 80px 40px;
+    align-items: flex-start;
+    min-height: 857px;
 }
 
 .retrato_contacto {
-    flex: 0 0 880px;
+    flex: 1 1 400px;
+    max-width: 859px;
+    min-width: 0;
     margin-top: 12px;
 }
 
 .presentacion_contacto {
-    flex: 0 0 673px;
+    flex: 1 1 300px;
+    max-width: 673px;
+    min-width: 0;
     padding-top: 55px;
     margin-top: 55px;
-    transform: translateX(-21px);
 }
 
-/* Branding: columnas independientes para cada grupo de contenido. */
+
 .proyecto_gomex {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    padding: 0 80px 40px;
     align-items: flex-start;
     gap: 35px;
 }
@@ -1094,65 +972,60 @@ main {
 .gomex_identidad {
     display: flex;
     flex-direction: column;
-    flex: 0 0 640px;
+    flex: 1 1 300px;
+    max-width: 640px;
+    min-width: 0;
     gap: 55px;
     padding-top: 58px;
 }
 
-.logo_gomex {
-    width: 608px;
-    height: 297px;
-    flex-shrink: 0;
-}
 
 .gomex_contenido {
     display: flex;
     flex-direction: column;
-    flex: 0 0 460px;
-    margin-left: 49px;
+    flex: 1 1 300px;
+    max-width: 460px;
+    min-width: 0;
+    margin-left: 0;
     padding-top: 64px;
 }
 
 .texto_diseno_integral {
-    height: 247px;
-    flex-shrink: 0;
+    height: auto;
 }
 
 .foto_creatina {
     width: 460px;
-    height: 323px;
-    flex-shrink: 0;
+    height: auto;
+    aspect-ratio: 460 / 323;
 }
 
 .ig_publicaciones {
     width: 460px;
-    height: 326px;
+    height: auto;
+    aspect-ratio: 460 / 326;
     margin-top: 44px;
 }
 
 .gomex_mascota {
     display: flex;
     flex-direction: column;
-    flex: 0 0 457px;
+    flex: 1 1 300px;
+    max-width: 457px;
+    min-width: 0;
     padding-top: 44px;
 }
 
-.ig_perfil {
-    width: 457px;
-    height: 339px;
-    flex-shrink: 0;
-}
 
 .oso_gomex {
-    width: 560px;
-    height: 698px;
-    flex-shrink: 0;
     transform: translate(-1px, -65px);
 }
 
 .proyecto_mg3d {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    padding: 0 80px 40px;
     align-items: flex-start;
     gap: 23px;
 }
@@ -1160,35 +1033,38 @@ main {
 .mg3d_contenido {
     display: flex;
     flex-direction: column;
-    flex: 0 0 963px;
+    flex: 1 1 400px;
+    max-width: 963px;
+    min-width: 0;
     padding-top: 100px;
 }
 
 .texto_mg3d {
     min-height: 357px;
-    flex-shrink: 0;
     transform: translateX(-6px);
 }
 
-.tarjeta_mg3d_banner {
-    flex-shrink: 0;
-}
-
 .tarjeta_mg3d_libros {
-    flex: 0 0 684px;
+    flex: 1 1 300px;
+    max-width: 684px;
+    min-width: 0;
     margin-top: 90px;
 }
 
-/* Editorial: tapa a la izquierda, interior y video a la derecha. */
+
 .trabajos_editorial {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    padding: 0 80px 40px;
     align-items: flex-start;
     gap: 65px;
 }
 
 .libro_formula {
-    flex: 0 0 640px;
+    flex: 1 1 300px;
+    max-width: 640px;
+    min-width: 0;
     padding-top: 75px;
     margin-top: 75px;
 }
@@ -1198,33 +1074,24 @@ main {
     flex-direction: column;
     gap: 24px;
     padding-top: 60px;
-    flex: 0 0 980px;
+    flex: 1 1 400px;
+    max-width: 980px;
+    min-width: 0;
 }
 
-.libro_interior,
-.video_editorial {
-    flex-shrink: 0;
-}
 
-/* Formulario: campos distribuidos con Flexbox. */
 .contenido_formulario {
     align-items: flex-start;
 }
 
 .fila_formulario {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .fila_formulario>.campo_formulario {
-    flex: 1;
+    flex: 1 1 240px;
     min-width: 0;
-}
-
-.marco_formulario {
-    background-image: linear-gradient(#c8f808, #c8f808), linear-gradient(#c8f808, #c8f808), linear-gradient(#c8f808, #c8f808), linear-gradient(#c8f808, #c8f808);
-    background-size: 21px 21px;
-    background-repeat: no-repeat;
-    background-position: left top, right top, left bottom, right bottom;
 }
 
 .titulo_oculto {
@@ -1232,7 +1099,7 @@ main {
     height: 0;
     min-height: 0;
     flex: 0 0 0;
-    font-size: 0;
+    font-size: 0rem;
     line-height: 0;
 }
 
@@ -1244,53 +1111,6 @@ main {
     margin-top: 30px;
 }
 
-/* Espacios laterales equivalentes a las coordenadas del diseño original. */
-.contenido_sobre_mi,
-.contenido_contacto,
-.proyecto_gomex,
-.proyecto_mg3d,
-.trabajos_editorial {
-    justify-content: flex-start;
-}
-
-.contenido_sobre_mi::before {
-    content: "";
-    flex: 0 0 47px;
-}
-
-.contenido_contacto::before {
-    content: "";
-    flex: 0 0 194px;
-}
-
-.proyecto_gomex::before {
-    content: "";
-    flex: 0 0 87px;
-}
-
-.proyecto_mg3d::before {
-    content: "";
-    flex: 0 0 105px;
-}
-
-.trabajos_editorial::before {
-    content: "";
-    flex: 0 0 70px;
-}
-
-.retrato_contacto {
-    flex-basis: 859px;
-}
-
-.imagen_contacto {
-    width: 880px;
-}
-
-.presentacion_contacto {
-    transform: none;
-}
-
-/* Los cuatro puntos del marco también se distribuyen con Flexbox. */
 .marco_formulario {
     display: flex;
     flex-direction: column;
@@ -1300,7 +1120,8 @@ main {
 }
 
 .marco_formulario>.formulario {
-    flex: 0 0 779px;
+    flex: 0 1 auto;
+    min-height: 779px;
     padding: 59px 70px 71px;
     border: 2px solid #fff;
     background: #000;
@@ -1324,11 +1145,51 @@ main {
 }
 
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+main>*,
+main section>*,
+.bloque_sobre_mi,
+.bloque_enfoque,
+.texto_gomex,
+.texto_diseno_integral,
+.texto_mg3d,
+.marco_formulario,
+.campo_formulario {
+    max-width: 100%;
+    min-width: 0;
+}
+
+.tarjeta_mg3d_banner img,
+.tarjeta_mg3d_libros img {
+    width: 100%;
+    height: 100%;
+}
+
+.redes_contacto,
+.pie {
+    flex-wrap: wrap;
+}
+
+.pie {
+    width: calc(100% - 272px);
+    font-size: 2rem;
+    gap: 28px;
+    white-space: normal;
+}
+
+.ver_trabajos,
+.boton_contactame {
+    max-width: 100%;
+}
+
 @media screen and (max-width: 500px) {
     .cabecera {
         height: auto;
         padding: 10px 20px;
-        flex-direction: column;
         gap: 15px;
     }
 
@@ -1341,7 +1202,7 @@ main {
     }
 
     .navegacion a {
-        font-size: 12px;
+        font-size: 0.8rem;
     }
 
     .navegacion .logo {
