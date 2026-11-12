@@ -55,7 +55,6 @@ a:focus-visible {
     font-size: 1rem;
     font-style: italic;
     font-weight: 500;
-    white-space: nowrap;
 }
 
 .logo {
@@ -82,7 +81,7 @@ a:focus-visible {
 
 main {
 
-    flex: 1 0 auto;
+    flex: 1;
     width: 100%;
 }
 
@@ -113,11 +112,7 @@ main {
     transform: scale(1.05);
 }
 
-.cursor {
-    display: block;
-    object-fit: contain;
-    pointer-events: none;
-}
+
 
 .pie {
 
@@ -130,7 +125,6 @@ main {
     font-size: 2rem;
     font-style: italic;
     font-weight: 500;
-    white-space: nowrap;
 
 }
 
@@ -172,7 +166,6 @@ main {
     font-size: 11.9rem;
     font-weight: 400;
     line-height: 1;
-    white-space: nowrap;
 
 }
 
@@ -259,7 +252,6 @@ main {
 
 .imagen_disenador img {
     display: block;
-    object-fit: contain;
 }
 
 .inicio_sobre_mi,
@@ -304,7 +296,6 @@ main {
     font-size: 12.5rem;
     font-weight: 400;
     line-height: 1;
-    white-space: nowrap;
 }
 
 .titulo_contacto span {
@@ -350,7 +341,6 @@ main {
     font-size: 1.2rem;
     font-style: italic;
     font-weight: 500;
-    white-space: nowrap;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -366,7 +356,6 @@ main {
 .icono_behance,
 .icono_instagram {
     display: block;
-    object-fit: contain;
 }
 
 .pagina_contacto+.pie {
@@ -398,7 +387,6 @@ main {
     font-size: 11.9rem;
     font-weight: 400;
     line-height: 1;
-    white-space: nowrap;
 
 }
 
@@ -525,14 +513,12 @@ main {
     justify-content: center;
     width: 963px;
     height: auto;
-    aspect-ratio: 963 / 439;
 }
 
 .tarjeta_mg3d_libros {
 
     width: 684px;
     height: auto;
-    aspect-ratio: 684 / 806;
 }
 
 .tarjeta_mg3d_banner img,
@@ -542,10 +528,6 @@ main {
 
 .tarjeta_mg3d_banner img {
     object-fit: cover;
-}
-
-.tarjeta_mg3d_libros img {
-    object-fit: contain;
 }
 
 .cuerpo_editorial {
@@ -586,7 +568,6 @@ main {
     font-size: 11.9rem;
     font-weight: 400;
     line-height: 1;
-    white-space: nowrap;
 
 }
 
@@ -626,14 +607,12 @@ main {
 .libro_interior {
 
     height: auto;
-    aspect-ratio: 980 / 473;
     background: #d3161d;
 }
 
 .video_editorial {
 
     height: auto;
-    aspect-ratio: 980 / 464;
     background: #000;
 }
 
@@ -646,17 +625,13 @@ main {
 .libro_interior img,
 .video_editorial video {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .enlace_editorial {
     display: block;
     height: 100%;
     cursor: zoom-in;
-}
-
-#galeria_editorial {
-    scroll-margin-top: 147px;
 }
 
 .pagina_libro {
@@ -727,8 +702,6 @@ main {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    clip-path: inset(50%);
-    white-space: nowrap;
 }
 
 .fila_formulario {
@@ -877,7 +850,7 @@ main {
 .portada {
     display: flex;
     background: transparent;
-    min-height: max(300px, calc(56.25vw - 236px));
+    min-height: 550px;
 }
 
 .lienzo {
@@ -886,20 +859,20 @@ main {
     width: 100%;
     min-height: 100%;
     padding-top: 22px;
+    padding-right: 120px;
     overflow: hidden;
 }
 
 .accion_portada {
     display: flex;
     flex-direction: column;
-    flex: 0 1 341px;
+    width: 341px;
     padding-top: 51px;
     margin-left: auto;
-    margin-right: 120px;
 }
 
 .cursor {
-    align-self: flex-end;
+    margin-left: auto;
     transform: translateY(-1px);
 }
 
@@ -916,7 +889,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 53px;
-    flex: 1 1 400px;
+    width: 46%;
     max-width: 828px;
     min-width: 0;
     padding-top: 71px;
@@ -924,7 +897,7 @@ main {
 }
 
 .imagen_disenador {
-    flex: 1 1 400px;
+    width: 46%;
     max-width: 764px;
     min-width: 0;
     margin-top: 11px;
@@ -945,14 +918,14 @@ main {
 }
 
 .retrato_contacto {
-    flex: 1 1 400px;
+    width: 50%;
     max-width: 859px;
     min-width: 0;
     margin-top: 12px;
 }
 
 .presentacion_contacto {
-    flex: 1 1 300px;
+    width: 45%;
     max-width: 673px;
     min-width: 0;
     padding-top: 55px;
@@ -972,7 +945,7 @@ main {
 .gomex_identidad {
     display: flex;
     flex-direction: column;
-    flex: 1 1 300px;
+    width: 36%;
     max-width: 640px;
     min-width: 0;
     gap: 55px;
@@ -983,7 +956,7 @@ main {
 .gomex_contenido {
     display: flex;
     flex-direction: column;
-    flex: 1 1 300px;
+    width: 27%;
     max-width: 460px;
     min-width: 0;
     margin-left: 0;
@@ -997,20 +970,18 @@ main {
 .foto_creatina {
     width: 460px;
     height: auto;
-    aspect-ratio: 460 / 323;
 }
 
 .ig_publicaciones {
     width: 460px;
     height: auto;
-    aspect-ratio: 460 / 326;
     margin-top: 44px;
 }
 
 .gomex_mascota {
     display: flex;
     flex-direction: column;
-    flex: 1 1 300px;
+    width: 27%;
     max-width: 457px;
     min-width: 0;
     padding-top: 44px;
@@ -1033,7 +1004,7 @@ main {
 .mg3d_contenido {
     display: flex;
     flex-direction: column;
-    flex: 1 1 400px;
+    width: 55%;
     max-width: 963px;
     min-width: 0;
     padding-top: 100px;
@@ -1045,7 +1016,7 @@ main {
 }
 
 .tarjeta_mg3d_libros {
-    flex: 1 1 300px;
+    width: 40%;
     max-width: 684px;
     min-width: 0;
     margin-top: 90px;
@@ -1062,7 +1033,7 @@ main {
 }
 
 .libro_formula {
-    flex: 1 1 300px;
+    width: 38%;
     max-width: 640px;
     min-width: 0;
     padding-top: 75px;
@@ -1074,7 +1045,7 @@ main {
     flex-direction: column;
     gap: 24px;
     padding-top: 60px;
-    flex: 1 1 400px;
+    width: 57%;
     max-width: 980px;
     min-width: 0;
 }
@@ -1090,7 +1061,7 @@ main {
 }
 
 .fila_formulario>.campo_formulario {
-    flex: 1 1 240px;
+    width: 45%;
     min-width: 0;
 }
 
@@ -1098,13 +1069,12 @@ main {
     width: 0;
     height: 0;
     min-height: 0;
-    flex: 0 0 0;
     font-size: 0rem;
     line-height: 0;
 }
 
 .formulario {
-    row-gap: 0;
+    gap: 0;
 }
 
 .formulario> :not(.titulo_oculto)+ :not(.titulo_oculto) {
@@ -1120,7 +1090,6 @@ main {
 }
 
 .marco_formulario>.formulario {
-    flex: 0 1 auto;
     min-height: 779px;
     padding: 59px 70px 71px;
     border: 2px solid #fff;
@@ -1130,7 +1099,6 @@ main {
 .esquinas_formulario {
     display: flex;
     justify-content: space-between;
-    flex: 0 0 0;
     height: 0;
     width: calc(100% + 24px);
     transform: translate(-12px, -12px);
@@ -1139,7 +1107,8 @@ main {
 .esquinas_formulario::before,
 .esquinas_formulario::after {
     content: "";
-    flex: 0 0 21px;
+    width: 21px;
+    min-width: 21px;
     height: 21px;
     background: #c8f808;
 }
@@ -1166,7 +1135,7 @@ main section>*,
 .tarjeta_mg3d_banner img,
 .tarjeta_mg3d_libros img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .redes_contacto,
@@ -1178,12 +1147,28 @@ main section>*,
     width: calc(100% - 272px);
     font-size: 2rem;
     gap: 28px;
-    white-space: normal;
 }
 
 .ver_trabajos,
 .boton_contactame {
     max-width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    .textos_sobre_mi,
+    .imagen_disenador,
+    .retrato_contacto,
+    .presentacion_contacto,
+    .gomex_identidad,
+    .gomex_contenido,
+    .gomex_mascota,
+    .mg3d_contenido,
+    .tarjeta_mg3d_libros,
+    .libro_formula,
+    .editorial_multimedia,
+    .fila_formulario > .campo_formulario {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 500px) {
